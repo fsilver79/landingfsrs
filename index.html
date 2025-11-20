@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <title>Félix Silvestrini Real Estate | Puerto Rico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script><!-- Element SDK (requerido) -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    /* Fallback: base font stack, será actualizado por config */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    /* Scroll suave entre secciones */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Focus visible personalizado */
+    :focus-visible {
+      outline: 3px solid #B40101;
+      outline-offset: 2px;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-[#F5F5F5] text-[#1A1A1A]">
+  <header class="w-full bg-white border-b border-[#E0E0E0]">
+   <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between gap-6">
+    <div class="flex items-center gap-3"><!-- Logo -->
+     <div class="w-12 h-12 flex items-center justify-center">
+      <svg viewbox="0 0 200 200" class="w-full h-full" aria-label="Félix Silvestrini Real Estate Logo"><!-- Fondo circular rojo KW --> <circle cx="100" cy="100" r="95" fill="#B40101" /> <!-- Casa estilizada en blanco --> <path d="M100 45 L145 75 L145 135 L55 135 L55 75 Z" fill="white" /> <!-- Techo --> <path d="M100 35 L160 80 L155 85 L100 50 L45 85 L40 80 Z" fill="white" /> <!-- Puerta --> <rect x="85" y="105" width="30" height="30" fill="#B40101" /> <!-- Ventana izquierda --> <rect x="65" y="85" width="15" height="15" fill="#B40101" /> <!-- Ventana derecha --> <rect x="120" y="85" width="15" height="15" fill="#B40101" /> <!-- Iniciales FS en la parte inferior --> <text x="100" y="170" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">
+        FS
+       </text>
+      </svg>
+     </div>
+     <div class="flex flex-col"><span class="text-sm uppercase tracking-[0.2em] text-[#666666]">Real Estate</span> <span class="text-base font-medium text-[#1A1A1A]">Félix Silvestrini</span>
+     </div>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-[#666666]" aria-label="Principal"><a href="#servicios" class="hover:text-[#1A1A1A] transition-colors">Servicios</a> <a href="#vendedores" class="hover:text-[#1A1A1A] transition-colors">Vendedores</a> <a href="#compradores" class="hover:text-[#1A1A1A] transition-colors">Compradores</a> <a href="#inversionistas" class="hover:text-[#1A1A1A] transition-colors">Inversionistas</a> <a href="#sobre-mi" class="hover:text-[#1A1A1A] transition-colors">Sobre mí</a> <a href="#contacto" class="hover:text-[#1A1A1A] transition-colors">Contacto</a>
+    </nav>
+    <div class="hidden md:flex"><a href="#contacto" class="inline-flex items-center justify-center rounded-full bg-[#B40101] px-5 py-2 text-sm font-semibold text-white shadow-md hover:bg-[#8c0101] transition-colors"> Agenda una llamada </a>
+    </div>
+   </div>
+  </header>
+  <main class="w-full"><!-- HERO -->
+   <section id="hero" class="w-full border-b border-[#E0E0E0] bg-white">
+    <div class="max-w-4xl mx-auto px-6 py-16 md:py-20 lg:py-24 text-center">
+     <div class="space-y-6 max-w-3xl mx-auto">
+      <p class="text-xs font-semibold tracking-[0.25em] uppercase text-[#666666]">Keller Williams Puerto Rico</p>
+      <h1 id="hero-title" class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-[#1A1A1A]">Vender, Comprar o Invertir en Puerto Rico con Estrategias que Funcionan.</h1>
+      <p id="hero-subtitle" class="text-sm md:text-base text-[#666666] max-w-2xl mx-auto">Félix Silvestrini – Real Estate Broker Lic. C-23200 | Keller Williams Puerto Rico</p>
+      <div class="flex flex-wrap justify-center gap-3 pt-2" aria-label="Llamados a la acción principales"><a id="hero-cta-primary" href="#vendedores" class="inline-flex items-center justify-center rounded-full bg-[#B40101] px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-[#8c0101] transition-colors"> Evaluar mi propiedad </a> <a id="hero-cta-secondary" href="https://agent.kwpuertorico.com/felixsilvestrini" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border-2 border-[#666666] bg-transparent px-6 py-2.5 text-sm font-semibold text-[#666666] hover:border-[#1A1A1A] hover:text-[#1A1A1A] transition-colors"> Buscar propiedades </a>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 pt-4 text-xs md:text-sm text-[#666666]">
+       <div class="flex items-center gap-2"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#E0E0E0] text-[0.7rem] text-[#1A1A1A]">18+</span> <span>años de experiencia en ventas y negociación</span>
+       </div>
+       <div class="flex items-center gap-2"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#E0E0E0] text-[0.7rem] text-[#1A1A1A]">PR</span> <span>Especialista en mercado residencial y comercial en Puerto Rico</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- PROPUESTA DE VALOR -->
+   <section id="propuesta-valor" class="w-full border-b border-[#E0E0E0] bg-[#F5F5F5]">
+    <div class="max-w-6xl mx-auto px-6 py-10 md:py-12">
+     <h2 id="value-title" class="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-6">¿Por qué trabajar con Félix Silvestrini Real Estate?</h2>
+     <div class="grid gap-6 md:grid-cols-3 lg:grid-cols-5"><!-- Card 1 -->
+      <article class="rounded-2xl bg-white border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#B40101]/10 text-[#B40101]"><!-- Icono estrategia -->
+        <svg width="18" height="18" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3h2v2H5v4H3V5a2 2 0 0 1 2-2m14 0a2 2 0 0 1 2 2v4h-2V5h-4V3h4M5 17h2v4h4v2H7a2 2 0 0 1-2-2v-4m16 0v4a2 2 0 0 1-2 2h-4v-2h4v-4h2M8 9h8v2H8V9m0 4h5v2H8v-2Z" />
+        </svg>
+       </div>
+       <h3 class="text-sm font-semibold text-[#1A1A1A]">Estrategias de venta personalizadas</h3>
+       <p class="text-xs text-[#666666]">Análisis profundo de tu propiedad y mercado para diseñar un plan de venta alineado a tus metas.</p>
+      </article><!-- Card 2 -->
+      <article class="rounded-2xl bg-white border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#B40101]/10 text-[#B40101]"><!-- Icono marketing -->
+        <svg width="18" height="18" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4h18v2H3V4m2 4h14v2H5V8m-2 4h18v2H3v-2m2 4h10v2H5v-2Z" />
+        </svg>
+       </div>
+       <h3 class="text-sm font-semibold text-[#1A1A1A]">Marketing profesional</h3>
+       <p class="text-xs text-[#666666]">Estrategias digitales y tradicionales para maximizar visibilidad con fotografía, video y promoción efectiva.</p>
+      </article><!-- Card 3 -->
+      <article class="rounded-2xl bg-white border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#B40101]/10 text-[#B40101]"><!-- Icono compradores -->
+        <svg width="18" height="18" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 5a3 3 0 1 1 0 6a3 3 0 0 1 0-6m0 8c2.67 0 8 1.34 8 4v2H4v-2c0-2.66 5.33-4 8-4Z" />
+        </svg>
+       </div>
+       <h3 class="text-sm font-semibold text-[#1A1A1A]">Acceso a compradores calificados</h3>
+       <p class="text-xs text-[#666666]">Red de clientes precalificados y agentes colaboradores para acelerar el proceso de venta.</p>
+      </article><!-- Card 4 -->
+      <article class="rounded-2xl bg-white border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#B40101]/10 text-[#B40101]"><!-- Icono inversión -->
+        <svg width="18" height="18" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 13h2v8H3v-8m4-6h2v14H7V7m4 3h2v11h-2V10m4-8h2v19h-2V2m4 6h2v13h-2V8Z" />
+        </svg>
+       </div>
+       <h3 class="text-sm font-semibold text-[#1A1A1A]">Asesoría experta para inversión</h3>
+       <p class="text-xs text-[#666666]">Evaluación de retorno, riesgos y escenarios para que tomes decisiones informadas al invertir.</p>
+      </article><!-- Card 5 -->
+      <article class="rounded-2xl bg-white border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#B40101]/10 text-[#B40101]"><!-- Icono acompañamiento -->
+        <svg width="18" height="18" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 5.9L13.45 9h3.55l-2.88 2.09L15.55 15L12 12.9L8.45 15l.43-3.91L6 9h3.55L12 5.9M12 2L9.19 7H3l4.72 3.42L6.26 17L12 13.8L17.74 17l-1.46-6.58L21 7h-6.19L12 2Z" />
+        </svg>
+       </div>
+       <h3 class="text-sm font-semibold text-[#1A1A1A]">Acompañamiento completo hasta el cierre</h3>
+       <p class="text-xs text-[#666666]">Desde la primera llamada hasta la firma final, con comunicación clara y seguimiento constante.</p>
+      </article>
+     </div>
+    </div>
+   </section><!-- SERVICIOS RESIDENCIALES Y COMERCIALES -->
+   <section id="servicios" class="w-full border-b border-[#E0E0E0] bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-10 md:py-12 space-y-8">
+     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+      <div>
+       <h2 class="text-2xl md:text-3xl font-semibold text-[#1A1A1A]">Servicios residenciales y comerciales</h2>
+       <p class="mt-2 text-sm text-[#666666] max-w-xl">Un enfoque integral para compradores, vendedores e inversionistas en todo Puerto Rico, con el respaldo de Keller Williams.</p>
+      </div>
+      <div class="inline-flex items-center gap-2 rounded-full bg-[#F5F5F5] border border-[#E0E0E0] px-4 py-2 text-xs text-[#666666]"><span class="inline-block h-2 w-2 rounded-full bg-[#B40101]"></span> Enfoque estratégico con KW Red como guía de resultados.
+      </div>
+     </div>
+     <div class="grid gap-6 md:grid-cols-2"><!-- Residenciales -->
+      <article class="rounded-2xl border border-[#E0E0E0] bg-[#F5F5F5] p-6 flex flex-col gap-4">
+       <div class="flex items-center justify-between gap-3">
+        <div>
+         <h3 class="text-lg font-semibold text-[#1A1A1A]">Residenciales</h3>
+         <p class="mt-1 text-xs text-[#666666]">Hogares pensados para tu etapa de vida actual y tus planes futuros.</p>
+        </div>
+        <div class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#B40101] text-white"><!-- Icono casa -->
+         <svg width="18" height="18" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3Z" />
+         </svg>
+        </div>
+       </div>
+       <ul class="space-y-2 text-sm text-[#666666]">
+        <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-1.5 rounded-full bg-[#B40101]"></span> <span>Compradores primerizos: orientación completa desde la precalificación hasta la firma.</span></li>
+        <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-1.5 rounded-full bg-[#B40101]"></span> <span>Upsizing y downsizing: vender y comprar al mismo tiempo con una estrategia coordinada.</span></li>
+        <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-1.5 rounded-full bg-[#B40101]"></span> <span>Relocalización dentro y fuera de Puerto Rico con acompañamiento logístico y de mercado.</span></li>
+       </ul>
+      </article><!-- Comerciales -->
+      <article class="rounded-2xl border border-[#E0E0E0] bg-[#F5F5F5] p-6 flex flex-col gap-4">
+       <div class="flex items-center justify-between gap-3">
+        <div>
+         <h3 class="text-lg font-semibold text-[#1A1A1A]">Comerciales</h3>
+         <p class="mt-1 text-xs text-[#666666]">Propiedades que responden a tu estrategia de negocio e inversión.</p>
+        </div>
+        <div class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#B40101] text-white"><!-- Icono edificio -->
+         <svg width="18" height="18" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 22V6l8-4l8 4v16h-6v-6h-4v6H4Z" />
+         </svg>
+        </div>
+       </div>
+       <ul class="space-y-2 text-sm text-[#666666]">
+        <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-1.5 rounded-full bg-[#B40101]"></span> <span>Inversiones en plazas, locales y oficinas alineadas a tu flujo de caja ideal.</span></li>
+        <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-1.5 rounded-full bg-[#B40101]"></span> <span>Propiedades multifamiliares con análisis de ocupación, rentas y potencial de crecimiento.</span></li>
+        <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-1.5 rounded-full bg-[#B40101]"></span> <span>Propiedades vacías, terrenos y usos mixtos con enfoque en plusvalía y desarrollo.</span></li>
+       </ul>
+      </article>
+     </div>
+    </div>
+   </section><!-- SECCIÓN VENDEDORES -->
+   <section id="vendedores" class="w-full border-b border-[#E0E0E0] bg-[#F5F5F5]">
+    <div class="max-w-4xl mx-auto px-6 py-10 md:py-12">
+     <div class="space-y-5">
+      <h2 id="sellers-title" class="text-2xl md:text-3xl font-semibold text-[#1A1A1A]">¿Quieres vender? Empieza con una evaluación real de mercado.</h2>
+      <p class="text-sm text-[#666666] max-w-xl">No todas las propiedades se venden igual. Analizo tu área, tu producto y tu momento para definir la mejor estrategia de salida.</p>
+      <ul class="space-y-3 text-sm text-[#666666]">
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#B40101]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Análisis comparativo de mercado</span> <span class="text-xs text-[#666666]">Revisión de ventas recientes, propiedades activas y tendencias para fijar expectativas reales.</span>
+        </div></li>
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#B40101]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Estrategia competitiva de precio</span> <span class="text-xs text-[#666666]">Posicionamiento inteligente para atraer al comprador ideal sin regalar valor.</span>
+        </div></li>
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#B40101]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Plan de marketing digital profesional</span> <span class="text-xs text-[#666666]">Exposición en portales, redes y base de datos segmentada de compradores calificados.</span>
+        </div></li>
+      </ul>
+      <div class="pt-2"><a href="#contacto" class="inline-flex items-center justify-center rounded-full bg-[#B40101] px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-[#8c0101] transition-colors"> Quiero evaluar mi propiedad </a>
+      </div>
+     </div>
+    </div>
+   </section><!-- SECCIÓN COMPRADORES -->
+   <section id="compradores" class="w-full border-b border-[#E0E0E0] bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-10 md:py-12 grid md:grid-cols-[1.4fr,1fr] gap-8 items-center">
+     <div class="order-2 md:order-1 md:pr-4 space-y-5">
+      <h2 id="buyers-title" class="text-2xl md:text-3xl font-semibold text-[#1A1A1A]">Te guío paso a paso hasta tu nuevo hogar.</h2>
+      <p class="text-sm text-[#666666] max-w-xl">Reducir estrés, ahorrar tiempo y negociar mejor: ese es el objetivo cuando trabajamos tu compra.</p>
+      <ul class="space-y-3 text-sm text-[#666666]">
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#666666]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Precalificación</span> <span class="text-xs text-[#666666]">Conexión con profesionales hipotecarios para definir rango de precio y estructura financiera.</span>
+        </div></li>
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#666666]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Búsqueda estratégica</span> <span class="text-xs text-[#666666]">Propiedades alineadas a tu estilo de vida, presupuesto y proyección de crecimiento.</span>
+        </div></li>
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#666666]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Negociación y trámites</span> <span class="text-xs text-[#666666]">Oferta, contraoferta, inspecciones y cierre acompañados punto por punto.</span>
+        </div></li>
+      </ul>
+      <div class="pt-2"><a href="https://agent.kwpuertorico.com/felixsilvestrini" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border-2 border-[#666666] bg-transparent px-6 py-2.5 text-sm font-semibold text-[#666666] hover:border-[#1A1A1A] hover:text-[#1A1A1A] transition-colors"> Buscar propiedades </a>
+      </div>
+     </div><!-- Panel lateral -->
+     <div class="order-1 md:order-2 md:justify-self-end">
+      <div class="rounded-2xl border border-[#E0E0E0] bg-[#F5F5F5] p-5 space-y-4 max-w-sm">
+       <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#666666]">Ruta del comprador</p>
+       <ol class="list-decimal list-inside text-xs text-[#666666] space-y-1.5">
+        <li>Definimos presupuesto y zona ideal.</li>
+        <li>Seleccionamos propiedades clave para visitar.</li>
+        <li>Diseñamos estrategia de oferta y negociación.</li>
+        <li>Acompañamiento hasta el cierre y entrega de llaves.</li>
+       </ol>
+      </div>
+     </div>
+    </div>
+   </section><!-- SECCIÓN INVERSIONISTAS -->
+   <section id="inversionistas" class="w-full border-b border-[#E0E0E0] bg-[#F5F5F5]">
+    <div class="max-w-6xl mx-auto px-6 py-10 md:py-12 grid md:grid-cols-[1.4fr,1fr] gap-8 items-center">
+     <div class="space-y-5">
+      <h2 id="investors-title" class="text-2xl md:text-3xl font-semibold text-[#1A1A1A]">Oportunidades de inversión con análisis claro y real.</h2>
+      <p class="text-sm text-[#666666] max-w-xl">Te presento números, escenarios y riesgos para que cada decisión de inversión tenga fundamento.</p>
+      <ul class="space-y-3 text-sm text-[#666666]">
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#B40101]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">ROI, cap rate y comparables</span> <span class="text-xs text-[#666666]">Modelos claros en base a ingresos potenciales, gastos y valor de mercado.</span>
+        </div></li>
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full bg-[#B40101]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Short-term rentals</span> <span class="text-xs text-[#666666]">Evaluación de propiedades con potencial de alquiler a corto plazo y reglas aplicables.</span>
+        </div></li>
+       <li class="flex items-start gap-2"><span class="mt-[6px] h-1.5 w-4 rounded-full	bg-[#B40101]"></span>
+        <div><span class="font-semibold text-[#1A1A1A] block text-sm">Multifamiliares</span> <span class="text-xs text-[#666666]">Estrategia de ocupación, mejora y revalorización de edificios multifamiliares.</span>
+        </div></li>
+      </ul>
+      <div class="pt-2"><a href="#contacto" class="inline-flex items-center justify-center rounded-full bg-[#B40101] px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-[#8c0101] transition-colors"> Solicitar listado de inversión </a>
+      </div>
+     </div><!-- Panel lateral datos -->
+     <div class="md:justify-self-end">
+      <div class="rounded-2xl border border-[#E0E0E0] bg-white p-5 space-y-4 max-w-sm shadow-sm">
+       <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#666666]">Perfil de inversión</p>
+       <div class="grid grid-cols-2 gap-3 text-xs	text-[#666666]">
+        <div class="rounded-lg bg-[#F5F5F5] border border-[#E0E0E0] p-3">
+         <p class="text-[0.7rem] text-[#999999]">Horizonte</p>
+         <p class="text-[0.85rem] font-semibold text-[#1A1A1A]">Mediano / Largo plazo</p>
+        </div>
+        <div class="rounded-lg bg-[#F5F5F5] border border-[#E0E0E0] p-3">
+         <p class="text-[0.7rem] text-[#999999]">Tipo</p>
+         <p class="text-[0.85rem] font-semibold text-[#1A1A1A]">Residencial / Comercial</p>
+        </div>
+       </div>
+       <p class="text-xs text-[#666666]">Podemos analizar tu portafolio actual y definir qué tipo de propiedad se ajusta mejor a tu próxima jugada.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- SOBRE MÍ -->
+   <section id="sobre-mi" class="w-full border-b border-[#E0E0E0] bg-white">
+    <div class="max-w-4xl mx-auto px-6 py-10 md:py-12">
+     <div class="space-y-4 text-center max-w-3xl mx-auto">
+      <h2 id="about-title" class="text-2xl	md:text-3xl font-semibold text-[#1A1A1A]">Sobre mí</h2>
+      <p id="about-text" class="text-sm text-[#666666] mx-auto">Félix Silvestrini, Real Estate Broker Lic. C-23200 con más de 18 años de experiencia en ventas, negociación y estrategias inmobiliarias. Especialista en propiedades residenciales, comerciales e inversiones. Mi compromiso es ofrecer un servicio basado en confianza, claridad y resultados.</p>
+      <div class="grid sm:grid-cols-3 gap-4 text-xs text-[#666666] pt-4 max-w-2xl mx-auto">
+       <div class="rounded-xl bg-[#F5F5F5] border border-[#E0E0E0] p-3">
+        <p class="text-[0.7rem] text-[#999999]">Experiencia</p>
+        <p class="text-[0.9rem] font-semibold text-[#1A1A1A]">18+ años</p>
+       </div>
+       <div class="rounded-xl bg-[#F5F5F5] border border-[#E0E0E0] p-3">
+        <p class="text-[0.7rem] text-[#999999]">Enfoque</p>
+        <p class="text-[0.9rem] font-semibold text-[#1A1A1A]">Resultados y claridad</p>
+       </div>
+       <div class="rounded-xl bg-[#F5F5F5] border border-[#E0E0E0] p-3">
+        <p class="text-[0.7rem] text-[#999999]">Ubicación</p>
+        <p class="text-[0.9rem] font-semibold text-[#1A1A1A]">Puerto Rico</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- TESTIMONIOS -->
+   <section id="testimonios" class="w-full border-b border-[#E0E0E0] bg-[#F5F5F5]">
+    <div class="max-w-6xl mx-auto px-6 py-10 md:py-12">
+     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+      <div>
+       <h2 id="testimonials-title" class="text-2xl md:text-3xl font-semibold text-[#1A1A1A]">Lo que dicen mis clientes</h2>
+       <p class="mt-2 text-sm text-[#666666] max-w-xl">Testimonios reales de personas que confiaron en mi acompañamiento para vender, comprar o invertir en Puerto Rico.</p>
+      </div>
+     </div>
+     <div class="grid gap-6 md:grid-cols-3"><!-- Testimonio 1 -->
+      <article class="rounded-2xl bg:white text-[#1A1A1A]	border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="flex items-center justify-between">
+        <p class="text-sm font-semibold">María &amp; José</p>
+        <div class="flex gap-0.5 text-[#B40101]" aria-label="5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+       </div>
+       <p class="text-xs text-[#666666]">"Vendimos nuestra casa en menos tiempo del esperado y con un precio mejor al que teníamos en mente. Sentimos acompañamiento en todo el proceso."</p>
+       <p class="text-[0.7rem] text-[#999999]">Venta residencial | Área metro</p>
+      </article><!-- Testimonio 2 -->
+      <article class="rounded-2xl bg:white text-[#1A1A1A]	border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="flex items-center justify-between">
+        <p class="text-sm font-semibold">Carlos R.</p>
+        <div class="flex gap-0.5 text-[#B40101]" aria-label="5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+       </div>
+       <p class="text-xs text-[#666666]">"Como comprador primerizo tenía muchas dudas. Félix me explicó cada paso con claridad y logró negociar condiciones que me dieron mucha tranquilidad."</p>
+       <p class="text-[0.7rem] text-[#999999]">Compra primera vivienda | Bayamón</p>
+      </article><!-- Testimonio 3 -->
+      <article class="rounded-2xl bg:white text-[#1A1A1A]	border border-[#E0E0E0] p-5 flex flex-col gap-3 shadow-sm">
+       <div class="flex items-center justify-between">
+        <p class="text-sm font-semibold">Inversionista PR/USA</p>
+        <div class="flex gap-0.5 text-[#B40101]" aria-label="5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+       </div>
+       <p class="text-xs text-[#666666]">"Evaluamos varias propiedades multifamiliares y siempre tuve análisis claros de cap rate y comparables. Tomé decisiones con números, no con suposiciones."</p>
+       <p class="text:[0.7rem] text-[#999999]">Inversión multifamiliar | Área metro</p>
+      </article>
+     </div>
+    </div>
+   </section><!-- CONTACTO -->
+   <section id="contacto" class="w-full bg:white">
+    <div class="max-w-6xl mx-auto px-6 py-10 md:py-12 grid md:grid-cols-[1.4fr,1fr] gap-8">
+     <div class="space-y-5">
+      <h2 id="contact-title" class="text-2xl	md:text-3xl font-semibold text-[#1A1A1A]">Listo para dar tu próximo paso?</h2>
+      <p id="contact-subtitle" class="text-sm text-[#666666] max-w-xl">Estoy aquí para ayudarte con una estrategia diseñada para tus metas.</p>
+      <div class="grid sm:grid-cols-2 gap-4 text-sm text-[#666666]">
+       <div class="rounded-2xl border:border-[#E0E0E0] bg-[#F5F5F5] p-4 space-y-2">
+        <p class="text-[0.75rem] text-[#999999] uppercase tracking-[0.18em]">Teléfono</p>
+        <p class="text-base font-semibold text-[#1A1A1A]"><a href="tel:7875070107" class="hover:text-[#B40101] transition-colors"> 787-507-0107 </a></p>
+        <p class="text-[0.75rem] text-[#999999]">Lunes a viernes | Horario flexible</p>
+       </div>
+       <div class="rounded-2xl border	border-[#E0E0E0] bg-[#F5F5F5] p-4 space-y-2">
+        <p class="text-[0.75rem] text-[#999999] uppercase tracking-[0.18em]">Email</p>
+        <p class="text-base font-semibold text-[#1A1A1A] break-words"><a href="mailto:fsilvestrini@kellerwilliamspr.com" class="hover:text-[#B40101] transition-colors"> fsilvestrini@kellerwilliamspr.com </a></p>
+        <p class="text-[0.75rem] text-[#999999]">Comparte detalles y recibirás respuesta en el menor tiempo posible.</p>
+       </div>
+      </div>
+      <div class="pt-2 flex flex-wrap gap-3"><a href="#vendedores" class="inline-flex items-center justify-center rounded-full bg-[#B40101] px-5 py-2.5 text-sm font-semibold text:white shadow-lg hover:bg-[#8c0101] transition-colors"> Evaluar mi propiedad </a> <a href="https://agent.kwpuertorico.com/felixsilvestrini" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border-2 border-[#666666] bg-transparent px-5 py-2.5 text-sm font-semibold text-[#666666] hover:border-[#1A1A1A] hover:text-[#1A1A1A] transition-colors"> Buscar propiedades </a>
+      </div>
+     </div><!-- Formulario demo (sin envío externo) -->
+     <div class="md:justify-self-end">
+      <div class="rounded-2xl border	border-[#E0E0E0] bg-[#F5F5F5] p-5 max-w-sm">
+       <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#666666] mb-3">Déjame tus datos</p>
+       <p class="text-xs text-[#999999] mb-4">Completa el formulario y te contactaré lo antes posible.</p>
+       <form action="https://formspree.io/f/xpwbjlqd" method="POST" class="space-y-3" aria-label="Formulario de contacto">
+        <div class="space-y-1"><label for="nombre" class="text-xs text-[#666666]">Nombre completo</label> <input id="nombre" name="nombre" type="text" required class="w-full rounded-lg border border-[#E0E0E0] bg-white px-3 py-2 text-xs text-[#1A1A1A] placeholder:text-[#999999] focus:outline-none focus:ring-1 focus:ring-[#B40101]" placeholder="Escribe tu nombre">
+        </div>
+        <div class="space-y-1"><label for="email" class="text-xs text-[#666666]">Email</label> <input id="email" name="email" type="email" required class="w-full rounded-lg border border-[#E0E0E0] bg-white px-3 py-2 text-xs text-[#1A1A1A] placeholder:text-[#999999] focus:outline-none focus:ring-1 focus:ring-[#B40101]" placeholder="tu@email.com">
+        </div>
+        <div class="space-y-1"><label for="telefono" class="text-xs text-[#666666]">Teléfono</label> <input id="telefono" name="telefono" type="tel" required class="w-full rounded-lg border	border-[#E0E0E0] bg-white px-3 py-2 text-xs text-[#1A1A1A] placeholder:text-[#999999] focus:outline-none focus:ring-1 focus:ring-[#B40101]" placeholder="787-123-4567">
+        </div>
+        <div class="space-y-1"><label for="tipo" class="text-xs text-[#666666]">¿Qué te interesa?</label> <select id="tipo" name="tipo" class="w-full rounded-lg border	border-[#E0E0E0] bg-white px-3 py-2 text-xs text-[#1A1A1A] focus:outline-none focus:ring-1 focus:ring-[#B40101]"> <option value="vender">Vender propiedad</option> <option value="comprar">Comprar propiedad</option> <option value="invertir">Inversión</option> <option value="otro">Otro</option> </select>
+        </div><button type="submit" id="submit-btn" class="mt-2 w-full inline-flex items-center justify-center rounded-full bg-[#B40101] px-4 py-2.5 text-xs font-semibold text:white hover:bg-[#8c0101] transition-colors"> Enviar mensaje </button>
+        <p id="form-message" class="text-[0.7rem] text-[#999999] mt-1" aria-live="polite"></p>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="w-full border-t border-[#E0E0E0] bg-white">
+   <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+    <p class="text-[0.7rem] text-[#999999] text-center md:text-left">© <span id="footer-year"></span> Félix Silvestrini Real Estate | Keller Williams Puerto Rico. Todos los derechos reservados.</p>
+    <p class="text-[0.7rem] text-[#999999] text-center md:text-right">Información con fines ilustrativos. Confirma siempre detalles específicos de cada propiedad o inversión.</p>
+   </div>
+  </footer>
+  <script>
+    // Config por defecto para texto, colores y tipografía
+    const defaultConfig = {
+      hero_title: "Vender, Comprar o Invertir en Puerto Rico con Estrategias que Funcionan.",
+      hero_subtitle: "Félix Silvestrini – Real Estate Broker Lic. C-23200 | Keller Williams Puerto Rico",
+      hero_cta_primary: "Evaluar mi propiedad",
+      hero_cta_secondary: "Buscar propiedades",
+      value_title: "¿Por qué trabajar con Félix Silvestrini Real Estate?",
+      sellers_title: "¿Quieres vender? Empieza con una evaluación real de mercado.",
+      buyers_title: "Te guío paso a paso hasta tu nuevo hogar.",
+      investors_title: "Oportunidades de inversión con análisis claro y real.",
+      about_title: "Sobre mí",
+      about_text: "Félix Silvestrini, Real Estate Broker Lic. C-23200 con más de 18 años de experiencia en ventas, negociación y estrategias inmobiliarias. Especialista en propiedades residenciales, comerciales e inversiones. Mi compromiso es ofrecer un servicio basado en confianza, claridad y resultados.",
+      testimonials_title: "Lo que dicen mis clientes",
+      contact_title: "Listo para dar tu próximo paso?",
+      contact_subtitle: "Estoy aquí para ayudarte con una estrategia diseñada para tus metas.",
+      // Colores (5 máximos)
+      background_color: "#F5F5F5",      // BACKGROUND - gris claro
+      surface_color: "#FFFFFF",         // SECONDARY_SURFACE - blanco
+      text_color: "#1A1A1A",            // TEXT - gris oscuro
+      primary_action_color: "#B40101",  // PRIMARY_ACTION (KW Red)
+      secondary_action_color: "#666666",// SECONDARY_ACTION (gris medio)
+      // Tipografía
+      font_family: "system-ui",
+      font_size: 16
+    };
+
+    // Aplicar año del footer
+    document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+    // El formulario ahora se envía directamente a Formspree
+
+    // Función para actualizar estilos y textos según config
+    async function applyConfig(config) {
+      const cfg = config || defaultConfig;
+
+      // Textos principales
+      const heroTitleEl = document.getElementById("hero-title");
+      const heroSubtitleEl = document.getElementById("hero-subtitle");
+      const heroCtaPrimaryEl = document.getElementById("hero-cta-primary");
+      const heroCtaSecondaryEl = document.getElementById("hero-cta-secondary");
+      const valueTitleEl = document.getElementById("value-title");
+      const sellersTitleEl = document.getElementById("sellers-title");
+      const buyersTitleEl = document.getElementById("buyers-title");
+      const investorsTitleEl = document.getElementById("investors-title");
+      const aboutTitleEl = document.getElementById("about-title");
+      const aboutTextEl = document.getElementById("about-text");
+      const testimonialsTitleEl = document.getElementById("testimonials-title");
+      const contactTitleEl = document.getElementById("contact-title");
+      const contactSubtitleEl = document.getElementById("contact-subtitle");
+
+      if (heroTitleEl) heroTitleEl.textContent = cfg.hero_title || defaultConfig.hero_title;
+      if (heroSubtitleEl) heroSubtitleEl.textContent = cfg.hero_subtitle || defaultConfig.hero_subtitle;
+      if (heroCtaPrimaryEl) heroCtaPrimaryEl.textContent = cfg.hero_cta_primary || defaultConfig.hero_cta_primary;
+      if (heroCtaSecondaryEl) heroCtaSecondaryEl.textContent = cfg.hero_cta_secondary || defaultConfig.hero_cta_secondary;
+      if (valueTitleEl) valueTitleEl.textContent = cfg.value_title || defaultConfig.value_title;
+      if (sellersTitleEl) sellersTitleEl.textContent = cfg.sellers_title || defaultConfig.sellers_title;
+      if (buyersTitleEl) buyersTitleEl.textContent = cfg.buyers_title || defaultConfig.buyers_title;
+      if (investorsTitleEl) investorsTitleEl.textContent = cfg.investors_title || defaultConfig.investors_title;
+      if (aboutTitleEl) aboutTitleEl.textContent = cfg.about_title || defaultConfig.about_title;
+      if (aboutTextEl) aboutTextEl.textContent = cfg.about_text || defaultConfig.about_text;
+      if (testimonialsTitleEl) testimonialsTitleEl.textContent = cfg.testimonials_title || defaultConfig.testimonials_title;
+      if (contactTitleEl) contactTitleEl.textContent = cfg.contact_title || defaultConfig.contact_title;
+      if (contactSubtitleEl) contactSubtitleEl.textContent = cfg.contact_subtitle || defaultConfig.contact_subtitle;
+
+      // Tipografía base
+      const baseFont = cfg.font_family || defaultConfig.font_family;
+      const baseSize = Number(cfg.font_size || defaultConfig.font_size);
+
+      const baseStack = baseFont + ", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+      document.body.style.fontFamily = baseStack;
+
+      // Escalado de tamaños
+      const h1Size = baseSize * 2.1;
+      const h2Size = baseSize * 1.8;
+      const h3Size = baseSize * 1.3;
+      const bodySize = baseSize;
+      const smallSize = baseSize * 0.85;
+      const tinySize = baseSize * 0.75;
+
+      if (heroTitleEl) heroTitleEl.style.fontSize = h1Size + "px";
+      document.querySelectorAll("#propuesta-valor h2, #servicios h2, #vendedores h2, #compradores h2, #inversionistas h2, #sobre-mi h2, #testimonios h2, #contacto h2").forEach(function(el) {
+        el.style.fontSize = h2Size + "px";
+      });
+      document.querySelectorAll("h3").forEach(function(el) {
+        el.style.fontSize = h3Size + "px";
+      });
+      document.querySelectorAll("p, li, a, label, input, textarea, select, button, span").forEach(function(el) {
+        if (el.closest("small") || el.classList.contains("text-[0.7rem]")) {
+          el.style.fontSize = tinySize + "px";
+        } else if (el.classList.contains("text-xs") || el.classList.contains("text-[0.75rem]")) {
+          el.style.fontSize = smallSize + "px";
+        } else {
+          // No pisamos tamaños grandes ya definidos explícitamente por Tailwind en headings
+          if (!el.closest("h1") && !el.closest("h2") && !el.closest("h3")) {
+            el.style.fontSize = bodySize + "px";
+          }
+        }
+      });
+
+      // Colores
+      const backgroundColor = cfg.background_color || defaultConfig.background_color;
+      const surfaceColor = cfg.surface_color || defaultConfig.surface_color;
+      const textColor = cfg.text_color || defaultConfig.text_color;
+      const primaryActionColor = cfg.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryActionColor = cfg.secondary_action_color || defaultConfig.secondary_action_color;
+
+      // Fondo principal
+      document.body.style.backgroundColor = backgroundColor;
+
+      // Aplicar colores a secciones
+      document.querySelectorAll("section").forEach(function(section) {
+        if (section.id === "hero" || section.id === "servicios" || section.id === "compradores" || section.id === "sobre-mi" || section.id === "contacto") {
+          section.style.backgroundColor = surfaceColor;
+        } else {
+          section.style.backgroundColor = backgroundColor;
+        }
+      });
+
+      // Header y footer
+      const header = document.querySelector("header");
+      const footer = document.querySelector("footer");
+      if (header) header.style.backgroundColor = surfaceColor;
+      if (footer) footer.style.backgroundColor = surfaceColor;
+
+      // Texto general
+      document.querySelectorAll("h1, h2, h3, p, span, li, label, a").forEach(function(el) {
+        if (!el.closest("button") && !el.classList.contains("text-white")) {
+          el.style.color = textColor;
+        }
+      });
+
+      // Botones principales
+      document.querySelectorAll("a[href], button").forEach(function(btn) {
+        if (btn.className.includes("bg-[#B40101]")) {
+          btn.style.backgroundColor = primaryActionColor;
+          btn.style.borderColor = primaryActionColor;
+          btn.style.color = "#FFFFFF";
+        } else if (btn.className.includes("border-2") || btn.className.includes("border-[#666666]")) {
+          btn.style.borderColor = secondaryActionColor;
+          btn.style.color = secondaryActionColor;
+        }
+      });
+
+      // Cards y superficies
+      document.querySelectorAll("article, .rounded-2xl").forEach(function(card) {
+        if (card.closest("#testimonios")) {
+          card.style.backgroundColor = surfaceColor;
+          card.style.borderColor = "#E0E0E0";
+        }
+      });
+    }
+
+    // Inicializar Element SDK si está disponible
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig: defaultConfig,
+        onConfigChange: async function (config) {
+          await applyConfig(config);
+        },
+        mapToCapabilities: function (config) {
+          const cfg = config || defaultConfig;
+          return {
+            recolorables: [
+              {
+                get: () => cfg.background_color || defaultConfig.background_color,
+                set: (value) => {
+                  cfg.background_color = value;
+                  window.elementSdk.setConfig({ background_color: value });
+                }
+              },
+              {
+                get: () => cfg.surface_color || defaultConfig.surface_color,
+                set: (value) => {
+                  cfg.surface_color = value;
+                  window.elementSdk.setConfig({ surface_color: value });
+                }
+              },
+              {
+                get: () => cfg.text_color || defaultConfig.text_color,
+                set: (value) => {
+                  cfg.text_color = value;
+                  window.elementSdk.setConfig({ text_color: value });
+                }
+              },
+              {
+                get: () => cfg.primary_action_color || defaultConfig.primary_action_color,
+                set: (value) => {
+                  cfg.primary_action_color = value;
+                  window.elementSdk.setConfig({ primary_action_color: value });
+                }
+              },
+              {
+                get: () => cfg.secondary_action_color || defaultConfig.secondary_action_color,
+                set: (value) => {
+                  cfg.secondary_action_color = value;
+                  window.elementSdk.setConfig({ secondary_action_color: value });
+                }
+              }
+            ],
+            borderables: [],
+            fontEditable: {
+              get: () => cfg.font_family || defaultConfig.font_family,
+              set: (value) => {
+                cfg.font_family = value;
+                window.elementSdk.setConfig({ font_family: value });
+              }
+            },
+            fontSizeable: {
+              get: () => cfg.font_size || defaultConfig.font_size,
+              set: (value) => {
+                cfg.font_size = value;
+                window.elementSdk.setConfig({ font_size: value });
+              }
+            }
+          };
+        },
+        mapToEditPanelValues: function (config) {
+          const cfg = config || defaultConfig;
+          return new Map([
+            ["hero_title", cfg.hero_title || defaultConfig.hero_title],
+            ["hero_subtitle", cfg.hero_subtitle || defaultConfig.hero_subtitle],
+            ["hero_cta_primary", cfg.hero_cta_primary || defaultConfig.hero_cta_primary],
+            ["hero_cta_secondary", cfg.hero_cta_secondary || defaultConfig.hero_cta_secondary],
+            ["value_title", cfg.value_title || defaultConfig.value_title],
+            ["sellers_title", cfg.sellers_title || defaultConfig.sellers_title],
+            ["buyers_title", cfg.buyers_title || defaultConfig.buyers_title],
+            ["investors_title", cfg.investors_title || defaultConfig.investors_title],
+            ["about_title", cfg.about_title || defaultConfig.about_title],
+            ["about_text", cfg.about_text || defaultConfig.about_text],
+            ["testimonials_title", cfg.testimonials_title || defaultConfig.testimonials_title],
+            ["contact_title", cfg.contact_title || defaultConfig.contact_title],
+            ["contact_subtitle", cfg.contact_subtitle || defaultConfig.contact_subtitle]
+          ]);
+        }
+      });
+
+      // Aplicar configuración inicial
+      applyConfig(window.elementSdk.config || defaultConfig);
+    } else {
+      // Si el SDK no está disponible (vista previa simple), aplicar config por defecto
+      applyConfig(defaultConfig);
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a149fae664ca04c',t:'MTc2MzYwNjg1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
